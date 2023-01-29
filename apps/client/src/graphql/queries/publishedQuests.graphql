@@ -1,0 +1,16 @@
+query PublishedQuests($after: LastEvaluatedKey) {
+  publishedQuests(after: $after) {
+    nodes {
+      ...Quest
+    }
+
+    pageInfo {
+      endCursor {
+        id
+        title
+        creatorId
+      }
+      hasNextPage
+    }
+  }
+}

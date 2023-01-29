@@ -1,0 +1,5 @@
+query PublishedQuest($id: String!) {
+  publishedQuest(id: $id) {
+    ...Quest
+  }
+}

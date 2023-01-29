@@ -1,0 +1,9 @@
+query workspaceQuestAndSolutionList($userId: String!) {
+  workspaceQuestAndSolutionList(userId: $userId) {
+    id
+    title
+    topic
+    inTrash
+    version
+  }
+}

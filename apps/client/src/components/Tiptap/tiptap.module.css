@@ -1,0 +1,55 @@
+
+.imageParentContainer{
+
+    width:100%;
+ display: flex;
+    justify-content: center;
+}
+.container{
+
+    width:100%;
+
+}
+.imageContainer{
+    position: relative;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    cursor: pointer;
+    
+}
+.fileContainer{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    border:1px solid var(--brown-100);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.deleteFileButton{
+    width: 30px;
+    height: 30px;
+    border:none;
+    background: none;
+    cursor: pointer;
+}
+/* Ipad */
+@media screen and (min-width: 764px) {
+
+  
+}
+
+/*Ipad vertical - small laptop */
+@media screen and (min-width: 1024px) {
+  .imageContainer{
+
+    width: 500px;
+}
+}
+
+/* Laptop - PC */ 
+@media screen and (min-width:1280px){
+
+}

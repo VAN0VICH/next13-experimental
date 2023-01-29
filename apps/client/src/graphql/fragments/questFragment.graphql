@@ -1,0 +1,10 @@
+fragment Quest on Quest {
+  id
+  title
+  topic
+  subtopic
+  reward
+  slots
+  description
+  createdAt
+}

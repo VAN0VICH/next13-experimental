@@ -1,0 +1,9 @@
+# query UserQuests {
+#   userQuests {
+#     _id
+#     title
+#     topic
+#     subtopic
+#     reward
+#   }
+# }

@@ -1,0 +1,5 @@
+mutation UpdateQuestAttributes(
+  $updateQuestTransactions: [UpdateQuestTransaction]!
+) {
+  updateQuestAttributes(updateQuestTransactions: $updateQuestTransactions)
+}

@@ -1,0 +1,3 @@
+mutation UpdateQuestDescription($questId: String!, $description: String!) {
+  updateQuestDescription(questId: $questId, description: $description)
+}

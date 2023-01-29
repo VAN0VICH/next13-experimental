@@ -1,0 +1,5 @@
+subscription QuestCreated($publisherId: String!) {
+  questPublished(publisherId: $publisherId) {
+    ...Quest
+  }
+}

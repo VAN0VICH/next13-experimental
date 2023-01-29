@@ -1,0 +1,3 @@
+mutation createQuest($id: String!, $creatorId: String!) {
+  createQuest(id: $id, creatorId: $creatorId)
+}

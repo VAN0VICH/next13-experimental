@@ -1,0 +1,3 @@
+# mutation AddUserAttributes($userAttributes: UserAttributes!) {
+#   addUserAttributes(userAttributes: $userAttributes)
+# }

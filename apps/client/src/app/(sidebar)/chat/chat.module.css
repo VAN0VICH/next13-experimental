@@ -1,0 +1,290 @@
+.parent{
+    width: 100%;
+    height: 100%;
+}
+.chatContainer{
+    
+    background: var(--brown-0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+
+}
+.messagesMargins{
+    width: 100%;
+}
+.inputMargins{
+    width: 100%;
+    display: flex;
+}
+.sidebar{
+
+box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+    /* background: var(--brown-50); */
+    display: none;
+    width: 250px;
+    height: 100%;
+
+
+    /* border-right: 1px solid white; */
+  position: fixed;
+    top: 0;
+
+    overflow-x: hidden;
+    left: 0;
+    z-index: 1;
+    /* will-change: transform; */
+}
+.searchContainer{
+    height: 80px;
+    width: 100%;
+}
+.channelContainer{
+    width: 100%;
+    height: 100%;
+
+
+}
+.channel{
+    width: 100%;
+    height:100%
+}
+.channelHeader{
+    margin-left: 2px;
+    width: calc(100%-2px);
+    height: 80px;
+    /* background: var(--brown-50); */
+
+box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+/* border-radius: 0px 0px 10px 10px; */
+}
+
+.channelListContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.createChannelContainer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.createChannelButton{
+    width: 60px;
+    height: 40px;
+    background: blue;
+    cursor:pointer
+}
+.channelList{
+width: 96%;
+height: 100%;
+}
+.channelListItem{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.channelListItem:hover{
+    background: var(--brown-100);
+}
+.avatarContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height:50px;
+
+}
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+}
+.dialogContainer{
+    display: flex;
+width: 100%;
+height: calc(100% - 80px);
+}
+.dialog{
+    width: 100%;
+    height: 100%;
+}
+.settings{
+    width: 20%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.messageList{
+ 
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+}
+.messageItem{
+    margin-top: 5px;
+
+    gap: 5px;
+    display: flex;
+    height: fit-content;
+}
+
+.messageItemFromYou{
+
+    margin-top: 5px;
+    gap: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.profileImageContainer{
+    width: 40px;
+}
+.messageContainer{
+    display: flex;
+    width: calc(100% - 40px);
+
+    height: fit-content;}
+.messageContainerFromYou{
+
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: row-reverse;
+
+
+}
+.message{
+    width: fit-content;
+    padding: 10px;
+    min-width: 30%;
+    max-width: 80%;
+    background: white;
+    border-radius: 20px;
+    word-wrap: break-word;
+    white-space: normal;
+
+box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25);
+
+}
+
+.messageInfoContainer{
+    gap: 5px;
+    display: flex;
+}
+.profileImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+}
+
+.channelInputContainer{
+    display: flex;
+    justify-content: center;
+ width: 100%;
+    height:100px
+}
+.messageInputContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(100% - 100px);
+}
+.messageInput{
+    padding:10px;
+    width: 95%;
+    height: 60px;
+    border-radius: 20px;
+    outline-color: var(--brown-100);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    border: none;
+}
+.messageButtonsContainer{
+    width: 100px;
+    height: 100%;
+    display: flex;
+
+}
+.messageButtonContainer{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.sendMessageButton{
+    width: 40px;
+    height: 40px;
+    background: var(--brown-100);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+}
+.fileUploadButton{
+ width: 40px;
+    height: 40px;
+    background: var(--brown-100);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+}
+.yo{
+    height: 1000px;
+}
+
+@media screen and (min-width:780px){
+.sidebar{
+    display: block;
+ 
+    
+}
+.channelContainer{
+    width: calc(100% - 250px);
+    margin-left: 250px;
+
+}
+} 
+@media screen and (min-width:1080px){
+.messagesMargins{
+    width: 80%;
+}
+.inputMargins{
+    width: 80%;
+    display: flex;
+}
+} 
+@media screen and (min-width:1280px){
+.settings{
+    display: block;
+}
+.dialog{
+    width: 80%;
+}
+
+.sidebar{
+    display: block;
+ 
+    margin-left: 280px;
+    
+}
+
+} 

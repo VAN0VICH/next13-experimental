@@ -1,0 +1,3 @@
+query WorkspaceQuestAndSolutionListVersion($userId: String!) {
+  workspaceQuestAndSolutionListVersion(userId: $userId)
+}

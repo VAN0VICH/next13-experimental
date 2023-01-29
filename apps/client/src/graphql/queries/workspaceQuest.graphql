@@ -1,0 +1,5 @@
+query WorkspaceQuest($questId: String!, $userId: String!) {
+  workspaceQuest(questId: $questId, userId: $userId) {
+    ...Quest
+  }
+}

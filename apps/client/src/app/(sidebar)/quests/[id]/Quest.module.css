@@ -1,0 +1,164 @@
+.questPage{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.questContainer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customerContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.questComponent{
+    
+    margin-top: 50px;
+    border-radius: 16px;
+    width:850px;
+    height: 600px;
+    background-color: var(--green-50);
+}
+.customerComponent{
+    margin-top: 50px;
+    width: 850px;
+    height: 100px;
+    
+    background-color: var(--green-50);
+    border-radius: 16px;
+}
+.topicContainer{
+    display: flex;
+    gap: 15px;
+}
+.topic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  background-color: #fecaca;
+ 
+  border:2px solid rgb(255, 0, 0);
+  border-radius: 15px;
+}
+.subtopic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  background-color: white;
+
+  border:2px solid rgb(8, 12, 255);
+  border-radius: 15px;
+}
+.rewardContainer{
+    margin-top: 10px;
+    display: flex;
+}
+.yellowCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: yellow;
+
+  border:1px solid rgb(0, 0, 0);
+}
+.greyCircle{
+    margin-left: 10px;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: rgb(223, 223, 223)
+}
+.amount{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height:40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: larger;
+  font-weight: 700;
+   
+
+}
+.participateButtonContainer{
+    display: flex;
+    justify-content: center;
+}
+.grid{
+   
+    display: grid;
+    grid-template-columns: 300px 300px 300px; 
+ 
+  column-gap: 2px;
+  row-gap: 15px;
+}
+.solversContainer{
+    width: 850px;
+}
+.solver{
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 200px;
+    height: 50px;
+    background-color: var(--green-50);
+}
+.sendMessageButton{
+    display: none;
+  
+}
+@media screen and (min-width:1024px){
+    .questPage{
+        display: flex;
+        flex-direction: row;
+    }
+    .grid{
+   
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+
+  column-gap: 2px;
+  row-gap: 15px;
+}
+.questContainer{
+    width: 70%;
+    
+}
+.customerContainer{
+
+    width: 30%;
+}
+.sendMessageButton{
+    display: block;
+min-width: 100px;
+  border-radius: 24px;
+  margin-top: 20px;
+  background-color: var(--green-400);
+  height: 50px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border: none;
+  cursor:pointer
+}
+.customerComponent{
+
+    width: 300px;
+    height: 500px;
+    
+   
+}
+}
