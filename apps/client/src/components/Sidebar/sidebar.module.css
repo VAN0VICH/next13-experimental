@@ -10,6 +10,9 @@
 
   min-width: 250px;
 }
+.sidebar{
+  display: none;
+}
 
 .footbar{
   height: 200px;

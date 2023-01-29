@@ -5,7 +5,6 @@ const Leaderboard = () => {
   return (
     <div className={styles.leaderboardContainer}>
       <div className={styles.leaderboard}>
-        <div className={styles.leaderboardRoof}></div>
         <div className={styles.leaderboardTitleContainer}>
           <div className={styles.leaderboardBadge}>
             <h1 className="title1">Leaderboard</h1>

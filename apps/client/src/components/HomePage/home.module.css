@@ -1,14 +1,12 @@
 
-.parent{
+.mainContainer{
   display: flex;
   justify-content: center;
   width: 100%;
-height: 100%;
-
-
+  height: 100%;
   max-width: 1400px;
 }
-.children{
+.childrenContainer{
  
   width: 100%;
 }
@@ -23,40 +21,23 @@ height: 100%;
   font-weight: 400;
 }
 
-
-  .leaderboardContainer {
+.leaderboardContainer {
   display: none;
-  }
-  .filtersContainer{
-    display: none;
-  }
+}
+
+.filtersContainer{
+  display: none;
+}
+
 .questsContainer {
 
   width: 100%;
 }
-.pageTitleContainer {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.pageTitleBadge {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-  height: 50px;
-  background: linear-gradient(180deg, #7BFE9E 0%, rgba(123, 254, 158, 0.21) 55.21%, #7BFE9E 100%);
-border: 2px solid #30EF7C;
-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25), 0px 0px 4px 2px #75FFAC;
-border-radius: 20px;
-}
+
 .title1{
 
   font-family: var(--font-anton);
   font-weight: 400;
-
 
 }
 
@@ -66,28 +47,19 @@ border-radius: 20px;
   border-radius: 32px;
   border:none
 }
-.roofCircle{
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background: var(--brown-100);
-}
+
 .select{
   width: 150px;
   height: 30px;
   outline: none;
-  border:1px solid var(--brown-100);
+  border:1px solid var(--main-color-100);
   border-radius: 20px;
-  background: var(--brown-0);
+  background: var(--main-color-0);
 
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
 
 }
-.option{
-  background:var(--brown-0);
-}
-
 
 /* Quests */
 .questsList{
@@ -107,28 +79,23 @@ font-weight: 600;
   align-items: center;
   justify-content: center;
   width: 100%;
-background: var(--brown-100);
+  background: var(--main-color-100);
   height: 265px;
-  border:1px solid var(--brown-200);
-
-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
+  border:1px solid var(--main-color-200);
+  box-shadow: var(--component-shadow);
+  border-radius: 10px;
 }
 .questComponent{
   position: relative;
   width: 100%;
 }
 .questContent {
-  /* position: relative; */
-width: 98%;
-height: 252px;
-
-background: var(--brown-0);
-
-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25);
-
-border-radius: 10px;
-cursor:pointer
+  width: 98%;
+  height: 252px;
+  background: var(--main-color-0);
+  box-shadow: var(--component-shadow);
+  border-radius: 10px;
+  cursor:pointer
 }
 .questContent:hover{
   background: linear-gradient(90deg, #FFF8F1 1.61%, rgba(255, 248, 241, 0) 62.16%, #FFF8F1 99.31%), #FFFFFF;
@@ -149,13 +116,11 @@ cursor:pointer
 .screw{
   margin-left: 1px;
   position: absolute;
-    /* top: 0; */
-  /* left: 0; */
   width: 7px;
   height: 25px;
   border-radius: 20px;
   background: linear-gradient(180deg, #A7A5A5 0%, rgba(167, 165, 165, 0.12) 32.29%, #A7A5A5 100%), #FFFFFF;
-border: 0.1px solid #747474;
+  border: 0.1px solid #747474;
   z-index: 69;
 }
 
@@ -166,7 +131,7 @@ border: 0.1px solid #747474;
   height: 10px;
   box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
-  background: var(--brown-200);
+  background: var(--main-color-200);
 }
 .relative{
   position: relative;
@@ -211,58 +176,34 @@ border: 0.1px solid #747474;
   width: 96px;
   height: 28px;
   background-color: white;
-
   border:2px solid rgb(0, 132, 255);
- 
   border-radius: 15px;
 }
 /* ipad */
 @media screen and (min-width:	768px){
   .questsContainer{
     width: 75%;
-    max-width: calc(100% - 250px);
   }
   
 
-    .filtersContainer {
-      display: block;
-   
+  .filtersContainer {
+    display: block;
     height: fit-content;
     width: 25%;
   }
 
 
   .filters {
-
     border-radius: 15px;
     max-width: 250px;
     width: 90%;
     min-height: 500px;
-background: var(--brown-0);
+    background: var(--main-color-0);
 
-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--component-shadow);
+    border-radius: 10px;
+  }
 
-border-radius: 10px;
-  }
-  .checkboxContainer{
-    width: 100%;
-    padding: 10px;
-
-  }
-  .subcheckboxContainer{
-    margin-left: 20px;
-  }
-  .topicCheckboxContainer{
-    display: flex;
-    justify-content: space-between;
-  }
-  .hideButton{
-    width: 20px;
-    height: 20px;
-  }
-.accordionContainer{
-  width: 100%;
-}
 
 }
 @media screen and (min-width: 1024px) {
@@ -280,17 +221,18 @@ border-radius: 10px;
   }
 
   .leaderboard {
-position: absolute;
-width: 90%;
+    position: absolute;
+    width: 90%;
     max-width: 230px;
     height: 400px;
-background:var(--brown-100);
-border-radius: 10px;
-box-shadow: 0px 3px 1px #BF754A, 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+    background:var(--main-color-100);
+    border-radius: 10px;
+
+    box-shadow: var(--component-shadow);
   }
 
   .leaderboardTitleContainer{
-     height: 70px;
+    height: 70px;  
     width: 100%;
     display: flex;
     align-items: center;
@@ -298,17 +240,16 @@ box-shadow: 0px 3px 1px #BF754A, 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
   }
 
   .leaderboardBadge{
- display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 90%;
     height: 40px;
-    background: var(--brown-0);
-    border: 2px solid var(--brown-200);
+    background: var(--main-color-0);
+    border: 2px solid var(--main-color-200);
 
-    
-  box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.25);
-border-radius: 20px;
+    box-shadow: var(--component-shadow);
+    border-radius: 20px;
   }
 
   .leaderboardButtonsContainer {
@@ -322,11 +263,8 @@ border-radius: 20px;
     height: 30px;
     width: 30px;
     border-radius: 50%;
-   
-  background:var(--brown-0);
-  
-    border:2px solid var(--brown-200);
-    
+    background:var(--main-color-0);
+    border:2px solid var(--main-color-200);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -335,23 +273,20 @@ border-radius: 20px;
     margin-top: 20px;
     height: fit-content;
     width: 230px;
- display: flex;
-
-justify-content: center;
+    display: flex;
+    justify-content: center;
   }
-
   .leader {
     height: 45px;
     width: 215px;
     display: flex;
     align-items: center;
- height: 45px;
+    height: 45px;
     width: 215px;
-    background: var(--brown-0);
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
-border-radius: 10px; 
+    background: var(--main-color-0);
+    box-shadow: var(--component-shadow);
+    border-radius: 10px; 
   }
-
   .avatar{
     margin-left: 5px;
     width: 38px;
@@ -359,16 +294,12 @@ border-radius: 10px;
     border-radius: 50%;
     background: white;
   }
-
-
-
 }
 @media screen and (min-width:1280px){
 
- .children{
- 
-  width: 90%;
-}
+  .children{
+    width: 90%;
+  }
 } 
 
 

@@ -5,18 +5,15 @@ import Questboard from "../../../components/HomePage/Questboard";
 import Filters from "../../../components/HomePage/Filters";
 const Home = () => {
   return (
-    <div className={styles.parent}>
-      <div className={styles.children}>
-        <div className={styles.pageTitleContainer}>
-          <h1 className={styles.title1}>Studlancer</h1>
-        </div>
+    <main className={styles.mainContainer}>
+      <div className={styles.childrenContainer}>
         <div className={styles.content}>
           <Leaderboard />
           <Questboard />
           <Filters />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
