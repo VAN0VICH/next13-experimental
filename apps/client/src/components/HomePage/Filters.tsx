@@ -4,13 +4,7 @@ import styles from "./home.module.css";
 const Filters = () => {
   return (
     <div className={styles.filtersContainer}>
-      <div className={styles.filters}>
-        <div className={styles.checkboxContainer}>
-          <>
-            <div className={styles.topicCheckboxContainer}></div>
-          </>
-        </div>
-      </div>
+      <div className={styles.filters}></div>
     </div>
   );
 };

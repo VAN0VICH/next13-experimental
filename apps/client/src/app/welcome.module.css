@@ -6,11 +6,13 @@
     align-items: center;
 }
 .aboutContainer{
-    width: 100%;
+
+    display: none;
+    width: 50%;
     height: 100%;
 }
 .loginContainer{
-    display: none;
+    display: flex;
     width: 50%;
     height: 100%;
     align-items: center;
@@ -24,13 +26,11 @@
 
 /* laptop */
 @media screen and (min-width:1024px){
-    .loginContainer{
+    .aboutContainer{
         display: flex;
     }
-    .aboutContainer{
-        width: 100%;
-    }
-    .aboutContainer{
+    
+    .loginContainer{
         width: 50%;
     }
    

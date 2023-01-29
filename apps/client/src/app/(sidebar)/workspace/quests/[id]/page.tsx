@@ -2,9 +2,9 @@
 
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
-import styles from "../../workspace.module.css";
-import QuestAttributes from "./QuestAttributes";
-import TiptapEditor from "./TiptapEditor";
+import styles from "../../../../../components/Workspace/workspace.module.css";
+import QuestAttributes from "../../../../../components/Workspace/QuestAttributes";
+import TiptapEditor from "../../../../../components/Workspace/TiptapEditor";
 
 // import QuestAttributes from "./questAttributes";
 
